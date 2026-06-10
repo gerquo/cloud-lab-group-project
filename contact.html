@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact NovaCraft Digital using a responsive form with JavaScript validation.">
+    <title>Contact | NovaCraft Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" data-header>
+        <nav class="navbar container" aria-label="Primary navigation">
+            <a class="brand" href="index.html" aria-label="NovaCraft Digital home">
+                <span class="brand-mark" aria-hidden="true">ND</span>
+                <span>
+                    <strong>NovaCraft Digital</strong>
+                    <small>Web & Software Development</small>
+                </span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="primary-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero contact-hero">
+            <div class="container narrow reveal">
+                <p class="eyebrow">Contact The Team</p>
+                <h1>Questions, feedback, or presentation details.</h1>
+                <p>Use the form below to reach the NovaCraft Digital project team. The form includes client-side validation and a success state for a polished static-site experience.</p>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="container contact-layout">
+                <aside class="contact-info reveal">
+                    <p class="eyebrow">Project Contact</p>
+                    <h2>NovaCraft Digital</h2>
+                    <p>For academic review, presentation coordination, software project discussion, or web development inquiries, connect with our team through the form or the placeholder channels below.</p>
+
+                    <div class="info-list">
+                        <div>
+                            <span aria-hidden="true">@</span>
+                            <p><strong>Email</strong> hello@novacraftdigital.dev</p>
+                        </div>
+                        <div>
+                            <span aria-hidden="true">D</span>
+                            <p><strong>Focus</strong> Web Design, Frontend Development, QA, and Deployment</p>
+                        </div>
+                        <div>
+                            <span aria-hidden="true">T</span>
+                            <p><strong>Availability</strong> Monday - Friday, Academic Hours</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links" aria-label="Social media placeholders">
+                        <a href="#" aria-label="LinkedIn placeholder">in</a>
+                        <a href="#" aria-label="GitHub placeholder">GH</a>
+                        <a href="#" aria-label="X placeholder">X</a>
+                    </div>
+                </aside>
+
+                <form class="contact-form glass-card reveal delay-1" id="contactForm" novalidate>
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" placeholder="Enter your full name" required>
+                        <small class="error-message" id="nameError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+                        <small class="error-message" id="emailError"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+                        <small class="error-message" id="messageError"></small>
+                    </div>
+
+                    <button class="btn btn-primary full-width" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-layout">
+            <div>
+                <a class="brand footer-brand" href="index.html">
+                    <span class="brand-mark" aria-hidden="true">ND</span>
+                    <span>
+                        <strong>NovaCraft Digital</strong>
+                        <small>Web Technologies and Software Development</small>
+                    </span>
+                </a>
+                <p>A professional static website for a student-led web and software development organization.</p>
+            </div>
+            <div class="footer-links" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2026 NovaCraft Digital. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
